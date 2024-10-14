@@ -27,6 +27,23 @@ This commands includes
 <BR>
 
 ## Output
+![WhatsApp Image 2024-10-14 at 14 43 13_abf3c5e2](https://github.com/user-attachments/assets/3186e0c1-ea0a-4448-8b5c-d7a4fc44f927)
+
+
+![WhatsApp Image 2024-10-14 at 14 43 22_47544eb3](https://github.com/user-attachments/assets/bd05442f-f7dc-4d70-83cc-b54b9118c81a)
+
+
+![WhatsApp Image 2024-10-14 at 14 43 40_d73bbcb6](https://github.com/user-attachments/assets/b4f3c110-5b6a-45be-b037-b8af12ece340)
+
+
+![WhatsApp Image 2024-10-14 at 14 43 51_d4d0e547](https://github.com/user-attachments/assets/22b4a3f6-1b73-4b8c-a417-9c210f0a6d19)
+
+
+
+![WhatsApp Image 2024-10-14 at 14 44 00_3cd79296](https://github.com/user-attachments/assets/2b3d9589-ebb2-4611-b779-9f3c6609678b)
+
+
+
 
 ## Result
 Thus Execution of Network commands Performed 
