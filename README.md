@@ -26,23 +26,52 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 
-## Output
-![WhatsApp Image 2024-10-14 at 14 43 13_abf3c5e2](https://github.com/user-attachments/assets/3186e0c1-ea0a-4448-8b5c-d7a4fc44f927)
+### PING COMMAND:
+## CILENT
+```
+import socket 
+from pythonping import ping 
+s=socket.socket() 
+s.bind(('localhost'8000)) 
+s.listen(5) 
+c,addr=s.accept() 
+while True: 
+    hostname=c.recv(1024).decode() 
+    try: 
+        c.send(str(ping(hostname, verbose=False)).encode()) 
+    except KeyError: 
+        c.send("Not Found".encode())
+```
+## SERVER:
+```
+import socket 
+s=socket.socket() 
+s.connect(('localhost',8000)) 
+while True: 
+    ip=input("Enter the website you want to ping ") 
+    s.send(ip.encode()) 
+    print(s.recv(1024).decode())
+```
+##  TRANCEROUTE COMMAND:
+```
+from scapy.all import* 
+target = ["www.google.com"] 
+result, unans = traceroute(target,maxttl=32) 
+print(result,unans)
+```
+## OUTPUT:
+## PING COMMAND:
+## CILENT:
 
+![image](https://github.com/user-attachments/assets/11d7be73-eb4a-480b-ac39-a0a772929464)
 
-![WhatsApp Image 2024-10-14 at 14 43 22_47544eb3](https://github.com/user-attachments/assets/bd05442f-f7dc-4d70-83cc-b54b9118c81a)
+## SERVER:
 
+![image](https://github.com/user-attachments/assets/754d7a1b-57c0-468e-aad2-4d56643e7957)
 
-![WhatsApp Image 2024-10-14 at 14 43 40_d73bbcb6](https://github.com/user-attachments/assets/b4f3c110-5b6a-45be-b037-b8af12ece340)
+## TRANCEROUTE COMMAND:
 
-
-![WhatsApp Image 2024-10-14 at 14 43 51_d4d0e547](https://github.com/user-attachments/assets/22b4a3f6-1b73-4b8c-a417-9c210f0a6d19)
-
-
-
-![WhatsApp Image 2024-10-14 at 14 44 00_3cd79296](https://github.com/user-attachments/assets/2b3d9589-ebb2-4611-b779-9f3c6609678b)
-
-
+![image](https://github.com/user-attachments/assets/1e303024-a3a6-46df-a231-796075ba40c9)
 
 
 ## Result
